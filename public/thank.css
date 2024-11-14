@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar {
+    padding: 1rem 0;
+    height: 15vh;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+/* Main Section */
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/ofc.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-attachment: fixed;
+}
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.msg-box {
+    height: 400px;
+    width: 800px;
+    text-align: center;
+    color: #e9ecef;
+    z-index: 1;
+    margin-top: 30%;
+}
+
+/* Footer Section */
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #000;
+    color: white;
+}
+
+footer .img-fluid {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+footer h5 {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    line-height: 1.6;
+    color: #bbb;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ebc808;
+}
+
+.w-100 {
+    background-color: #ebc808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Media Queries */
+
+/* Small Devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .navbar-brand .logo {
+        width: 100px; /* Smaller logo for mobile */
+    }
+    .msg-box {
+        width: 90%; /* Adjust message box width */
+        font-size: 1rem; /* Adjust font size */
+    }
+    footer h5 {
+        font-size: 1rem;
+    }
+    footer p, footer a {
+        font-size: 0.75rem;
+    }
+    .w-100 p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Medium Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .main {
+        height: auto;
+        padding: 2rem;
+    }
+    .msg-box {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.125rem;
+    }
+    footer .col-md-4 {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    footer h5 {
+        font-size: 1.25rem;
+    }
+    footer p {
+        font-size: 0.875rem;
+    }
+}
+
+/* Large Devices (max-width: 992px) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+    .msg-box {
+        width: 80%;
+    }
+    footer .container {
+        max-width: 90%;
+    }
+}
+
+/* Extra Large Devices (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .msg-box {
+        width: 70%;
+    }
+    footer .col-md-4 {
+        margin-bottom: 1rem;
+    }
+}

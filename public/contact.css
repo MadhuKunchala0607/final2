@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.logo {
+    width: 150px; 
+}
+.navbar {
+    padding: 1rem 0;
+    height: 15vh;
+}
+.navbar-nav {
+    gap: 15px;
+}
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+.main {
+    height: 50vh;
+    background-image: url('images/ofc.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg-box {
+    margin-top: 20%;
+    color: #e9ecef;
+    text-align: center;
+}
+.container-form {
+    position: relative;
+    margin-top: -40%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.address{
+    height: 100vh;
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-items: center;
+   align-items: center;
+   
+}
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #000;
+    color: white;
+}
+footer .img-fluid {
+    max-width: 500px; /* Increase the logo size */
+    margin-bottom: 1rem;
+}
+
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col-md-4 {
+    flex: 1 1 30%; /* Each column takes up 30% width in medium and larger screens */
+    margin-bottom: 2rem;
+}
+
+footer h5 {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    line-height: 1.6;
+    color: #bbb;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ebc808;
+}
+
+footer i {
+    color: #ebc808;
+    margin-right: 0.5rem;
+}
+
+footer .img-fluid {
+    max-width: 150px; /* Make logo responsive */
+    margin-bottom: 1rem;
+}
+
+footer .fs-6 {
+    font-size: 0.875rem;
+}
+
+footer .container .col-md-4.mb-4 {
+    margin-bottom: 2rem;
+}
+
+/* Bottom section for the copyright */
+.w-100 {
+    background-color: #ebc808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-100 p {
+    font-size: 0.875rem;
+    margin-top: 25px;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer .col-md-4 {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-bottom: 1rem;
+    }
+
+    footer h5 {
+        font-size: 1.25rem;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+
+    .w-100 {
+        font-size: 0.75rem;
+    }
+}
