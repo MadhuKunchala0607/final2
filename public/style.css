@@ -8,19 +8,12 @@
     
 }
 .phone-number {
-    font-family: Arial, sans-serif; /* Clear and readable font */
-    /* font-weight: bold;             Makes the digits stand out */
-    letter-spacing: 0.5px;         /* Adds slight spacing between digits */
-}
+    font-family: Arial, sans-serif; 
+}        
 
 
 
-/* .host-grotesk-<uniquifier> {
-  font-family: "Host Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
+
 html {
     scroll-behavior: smooth;
 }
@@ -234,9 +227,9 @@ h1 {
 
 
     .rotate-button{
-        position: fixed;
-       margin-left: 96%;
-       transform: rotate(180deg); 
+    position: fixed;
+    margin-left: 100%;
+    
     
     width: 50px; 
     height: 200px; /* Adjust height as needed */
@@ -331,7 +324,7 @@ h1 {
     border: 2px solid black; /* Black border around the form */
     padding: 20px;
     border-radius: 10px; /* Optional: rounded corners */
-    background-color: #f9f9f9; /* Light background color */
+    background-color:lightgray; /* Light background color */
 }
 
 /* Optional: Add space between the header and the form */
@@ -437,7 +430,7 @@ h1 {
 
 
 /* Responsive Design for Mobile Devices */
-@media (max-width: 668px) {
+@media (max-width: 550px) {
     .title {
         font-size: 2rem;
     }
@@ -447,7 +440,7 @@ h1 {
         height: 60vh;
     }
     .rotate-button{
-        margin-left: 90%;
+        margin-left: 0%;
     }
 
     .rqst-box {
@@ -493,7 +486,7 @@ h1 {
         height: auto;
     }
     .rotate-button{
-        margin-left: 85%;
+        margin-left: 45%;
     }
 
     .subtitle,
@@ -502,6 +495,8 @@ h1 {
     }
 
     .image-frame {
+       
+       
         height: 250px;
         width: 250px;
     }
@@ -524,6 +519,9 @@ h1 {
     .container-feedback {
         height: auto;
         padding: 10px;
+    }
+    .container-frame{
+        height: auto;
     }
 }
 @media (max-width: 768px) {
@@ -716,13 +714,15 @@ h1 {
     }
     .title {
         font-size: 1.75rem;
+        margin-left: -50%;
     }
     .highlight {
         font-size: 1.75rem;
+        margin-left: -20%;
     }
     .subtitle {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem;margin-left: -50%;
     }
     .rotate-button {
         padding: 0.5rem 0.75rem;
@@ -799,6 +799,11 @@ ul li i {
         line-height: 1.2;
          
     }
+    .para{
+        font-size:small;
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 }
 
 footer {
@@ -806,6 +811,7 @@ footer {
     padding-bottom: 3rem;
     background-color: #000;
     color: white;
+    font-family: 'Courier New', Courier, monospace!important;
 }
 footer .img-fluid {
     max-width: 500px; /* Increase the logo size */
@@ -816,28 +822,34 @@ footer .img-fluid {
 footer .container {
     max-width: 1200px;
     margin: 0 auto;
+    
+    
 }
 
 footer .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 footer .col-md-4 {
     flex: 1 1 30%; /* Each column takes up 30% width in medium and larger screens */
     margin-bottom: 2rem;
+   
 }
 
 footer h5 {
     font-weight: bold;
     color: #fff;
     margin-bottom: 1rem;
+    
 }
 
 footer p {
     line-height: 1.6;
     color: #bbb;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 footer a {
@@ -1127,10 +1139,13 @@ footer .container .col-md-4.mb-4 {
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
+
 }
 
 .faq .faq-item {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+
+    
 }
 
 .faq .question {
@@ -1146,6 +1161,8 @@ footer .container .col-md-4.mb-4 {
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+  
+   
 }
 
 .faq .question:hover {
@@ -1163,6 +1180,7 @@ footer .container .col-md-4.mb-4 {
     border-radius: 5px;
     max-height: 200px; /* Limit the height of the answer */
     overflow-y: auto; /* Add scroll if content exceeds the height */
+    text-align: left;
 }
 
 .faq .answer ul {
@@ -1190,7 +1208,7 @@ footer .container .col-md-4.mb-4 {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     #contact h1 {
         font-size: 1.5rem;
     }
@@ -1198,10 +1216,16 @@ footer .container .col-md-4.mb-4 {
     .faq .question {
         font-size: 1rem;
         padding: 8px;
+       
+    }
+    .faq .question{
+       width: 150%;
     }
 
     .faq .answer {
         font-size: 0.8rem;
+        width: 150%;
+        text-align: start;
     }
 }
 
